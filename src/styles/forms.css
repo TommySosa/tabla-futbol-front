@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/src/assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-equipo{
+    margin-top: 4em;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-equipo button{
+    margin-top: 2em;
+}
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input,
+.form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form button {
+    margin-top: 2em;
+    padding: 0.6em;
+    margin-left: 3em;
+}

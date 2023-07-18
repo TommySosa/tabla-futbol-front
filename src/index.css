@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  color: black;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1rem;
+}
+th,td{
+  border: 1px solid black;
+  text-align: center;
+}
+th{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.td-num{
+  padding: 1em;
+}
+.td-nombre{
+  padding: 2em;
+}
+.td-admin{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.grid-layout{
+  display: grid;
+  height: 100vh;
+  grid-template-areas: 'header header'
+                       'menu menu'
+                       'content content'
+                       'footer footer';
+  grid-template-rows: 10% 10% auto 10%;
+  grid-template-columns: auto;
+}
+.box{
+  text-align: center;
+}
+.header{
+  grid-area: header;
+  background-color: #122037;
+  color:#fafafa;
+  font-size: 1.4rem;
+}
+.menu{
+  grid-area: menu;
+  background: rgb(18,32,55);
+background: linear-gradient(180deg, rgba(18,32,55,1) 0%, rgba(20,92,141,1) 35%);
+}
+.content{
+  grid-area: content;
+  background-color: #fafafa;
+}
+.footer{
+  grid-area: footer;
+  background: rgb(18,32,55);
+  background: linear-gradient(360deg, rgba(18,32,55,1) 0%, rgba(20,92,141,1) 35%);
+  margin-top: 2em;
+}
+.tabla-container {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabla-admin{
+  display: flex;
+  align-items: center;
+}
+.table-bordered{
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+.botones{
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.boton-pg{
+  background-color: #2eb15e;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+.boton-pe{
+  background-color: #ffbc14;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+.boton-pp{
+  background-color: #eb2a2a;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+.botonVer{
+  background-color: #11b9ec;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+}
+.botones-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.botones-container button{
+  background-color: #209bd8;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  color: #fafafa;
+  font-size: 1.2rem;
+}
+.form-equipo{
+  padding: 1rem;
+}
+.errores{
+  color: red;
+}
